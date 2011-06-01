@@ -100,12 +100,12 @@ a.follow {
   height: 80px;
   background: #fff url('../images/footer_bg.png') repeat-x;
 }
-.footer .grid_3 p {
+.footer .grid_2 p {
   text-align: right;
   margin: 22px 0 0 0;
   color: #999;
 }
-  .footer .grid_3 p a {
+  .footer .grid_2 p a {
     color: #999;
     font-size: 13px;
   }
