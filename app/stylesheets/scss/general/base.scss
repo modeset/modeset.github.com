@@ -1,0 +1,64 @@
+
+/* Base
+ *****************************************************************************/
+
+body, button, input, select, textarea {
+  background: $body_bg_color;
+  color: $body_color;
+  font-family: $body_fonts;
+}
+
+body {
+  background: $body_bg;
+}
+
+hr {
+  border-color: $hr_color;
+}
+
+::-moz-selection {
+  background: $select_bg;
+  color: $select_color;
+  text-shadow: none;
+}
+
+::selection {
+  background: $select_bg;
+  color: $select_color;
+  text-shadow: none;
+}
+
+/* Links
+ *****************************************************************************/
+
+a {
+  color: $link_static;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $link_visited;
+  text-decoration: none;
+}
+
+a:active {
+  color: $link_active;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $link_hover;
+  text-decoration: none;
+}
+
+a:link {
+  -webkit-tap-highlight-color: $tap_highlight;
+}
+
+/* Text
+ *****************************************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header_color;
+}
+
