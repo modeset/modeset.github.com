@@ -14,5 +14,5 @@ help:
 	@echo ""
 
 styles:
-	sass $(SCSS_DIR)/white.scss > $(CSS_DIR)/white.css --style compressed
+	sass $(SCSS_DIR)/styles.scss > $(CSS_DIR)/styles.css --style compressed
 

@@ -1,0 +1,112 @@
+
+/* iPad landscape */
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
+
+  footer {
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    color: $link_static;
+  }
+
+}
+
+/* iPad portrait */
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+
+  a:hover {
+    color: $link_static;
+  }
+
+  /* containers */
+  #container, #content {
+    width: 760px;
+  }
+
+  footer {
+    margin-bottom: 10px;
+    nav ul {
+      margin: 8px 0 0 0;
+      text-align: left;
+    }
+
+    nav ul li {
+      margin-right: 14px;
+      display: block;
+      .img {
+        text-align: right;
+        float: right;
+        margin: -12px 0 0 0;
+      }
+
+    }
+  }
+
+}
+
+/* iPhone landscape */
+@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
+
+  a:hover {
+    color: $link_static;
+  }
+
+  /* containers */
+  #container, #content {
+    width: 470px;
+  }
+
+  footer {
+    margin-bottom: 10px;
+    nav ul {
+      margin: 8px 0 0 0;
+      text-align: left;
+    }
+
+    nav ul li {
+      margin-right: 14px;
+      display: block;
+      .img {
+        text-align: right;
+        float: right;
+        margin: -12px 0 0 0;
+      }
+
+    }
+  }
+
+}
+
+/* iPhone portrait */
+@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
+
+  a:hover {
+    color: $link_static;
+  }
+
+  /* containers */
+  #container, #content {
+    width: 310px;
+  }
+
+  footer {
+    margin-bottom: 10px;
+    nav ul {
+      margin: 8px 0 0 0;
+      text-align: left;
+    }
+
+    nav ul li {
+      margin-right: 14px;
+      display: block;
+      .img {
+        text-align: right;
+        float: right;
+        margin: -12px 0 0 0;
+      }
+    }
+  }
+
+}
+

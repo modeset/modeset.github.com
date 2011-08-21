@@ -2,10 +2,19 @@
 /* Base
  *****************************************************************************/
 
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+}
+
 body, button, input, select, textarea {
   background: $body_bg_color;
   color: $body_color;
-  font-family: $body_fonts;
+  font-family: $sans_norm;
 }
 
 body {
@@ -13,7 +22,10 @@ body {
 }
 
 hr {
-  border-color: $hr_color;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $hr_color;
 }
 
 ::-moz-selection {
@@ -32,6 +44,7 @@ hr {
  *****************************************************************************/
 
 a {
+  @include link_transition(0.25s);
   color: $link_static;
   text-decoration: none;
 }
@@ -41,24 +54,26 @@ a:visited {
   text-decoration: none;
 }
 
-a:active {
-  color: $link_active;
+a:focus {
+  /* outline: thin dotted; */
+  outline: 0;
+}
+
+a:hover, a:active {
+  @include link_transition(0.25s);
+  outline: 0;
   text-decoration: none;
 }
 
 a:hover {
   color: $link_hover;
-  text-decoration: none;
+}
+
+a:active {
+  color: $link_active;
 }
 
 a:link {
   -webkit-tap-highlight-color: $tap_highlight;
-}
-
-/* Text
- *****************************************************************************/
-
-h1, h2, h3, h4, h5, h6 {
-  color: $header_color;
 }
 
