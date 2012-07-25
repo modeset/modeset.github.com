@@ -5,3 +5,7 @@
 
 [modeset.github.com](http://modeset.github.com/)
 
+---------
+
+All image assets and marks are Copyright (&copy;) Theory Four, LLC // dba Mode Set.
+
