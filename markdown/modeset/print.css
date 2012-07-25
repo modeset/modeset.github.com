@@ -1,0 +1,146 @@
+
+@page {
+  size: 8.5in 11in;
+  margin: 1in;
+
+  /* This doesn't work quite yet */
+  @bottom-center {
+    content: "Mode Set " counter(page);
+  }
+}
+
+.page-break {
+  display: block;
+  page-break-after: always;
+}
+
+.modeset {
+  font-size: 11pt;
+  line-height: 1.2;
+  text-shadow: none !important;
+  width: auto;
+}
+
+.modeset .header {
+  display: none !important;
+}
+
+.modeset .wikistyle {
+  border: none !important;
+  padding: 0;
+}
+
+.modeset h1 {
+  font-size: 30pt;
+}
+
+.modeset h2 {
+  font-size: 24pt;
+}
+
+.modeset h3 {
+  font-size: 18pt;
+}
+
+.modeset h4 {
+  font-size: 16pt;
+}
+
+.modeset h5 {
+  font-size: 14pt;
+}
+
+.modeset h6 {
+  font-size: 13pt;
+}
+
+.modeset h1 + h2 {
+  font-size: 20pt;
+}
+
+.modeset h1 + h2 + h3 {
+  font-size: 14pt;
+}
+
+.modeset p,
+.modeset h2,
+.modeset h3,
+.modeset h4,
+.modeset h5,
+.modeset h6 {
+  orphans: 4;
+  widows: 2;
+}
+
+.modeset h2,
+.modeset h3,
+.modeset h4,
+.modeset h5,
+.modeset h6 {
+  page-break-after: avoid;
+}
+
+
+.modeset a,
+.modeset a:visited {
+  text-decoration: underline;
+}
+
+.modeset a[href*="http"]:after {
+  content: " (" attr(href) ")";
+  font-style: italic;
+  color: #6a6a6a;
+}
+
+.modeset abbr:after {
+  content: " (" attr(title) ")";
+  font-style: italic;
+  color: #6a6a6a;
+}
+
+.modeset pre,
+.modeset blockquote {
+  page-break-inside: avoid;
+}
+
+.modeset pre,
+.modeset code,
+.modeset pre > code,
+.modeset tt {
+  font-size: 9pt;
+}
+
+.modeset blockquote {
+  padding: 0 0.25in;
+}
+
+.modeset blockquote p {
+  font-size: 11pt;
+}
+
+.modeset table tr th {
+  font-size: 12pt;
+}
+
+.modeset table thead {
+  display: table-header-group;
+}
+
+.modeset tr,
+.modeset img {
+  page-break-inside: avoid;
+}
+
+.modeset .copyright {
+  font-size: 10pt;
+}
+
+.modeset .signature {
+  height: 0.5in;
+  font-size: 14pt;
+}
+
+.modeset .no-print {
+  display: none;
+}
+

@@ -1,0 +1,490 @@
+
+/* font-family: "HelveticaNeueLTStd-Th", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Th';
+  src: url('../../fonts/HelveticaNeueLTStd-Th.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: "HelveticaNeueLTStd-Roman", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url('../../fonts/HelveticaNeueLTStd-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: "HelveticaNeueLTStd-Bd", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Bd';
+  src: url('../../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: "HelveticaNeueLTStd-Hv", sans-serif; */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Hv';
+  src: url('../../fonts/HelveticaNeueLTStd-Hv.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: "MrsEavesBold", serif; */
+@font-face {
+  font-family: 'MrsEavesBold';
+  src: url('../../fonts/MrsEavesBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Print specific elements */
+.page-break {
+  display: none;
+}
+
+/* Mode Set styles */
+.modeset {
+  border: 0;
+  color: #434343;
+  font-size: 12px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  width: 920px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header and theme selector */
+.modeset .header {
+  background: #fafafa;
+  background: -moz-linear-gradient(#fafafa,#eaeaea);
+  background: -webkit-linear-gradient(#fafafa,#eaeaea);
+  border: thin solid #cfd0cf;
+  border-bottom: 0;
+  margin-top: 2em;
+  height: 40px;
+  overflow: hidden;
+}
+
+.modeset .header h2 {
+  border: none !important;
+  color: #7d7e7c;
+  font-family: "MrsEavesBold", serif;
+  font-size: 16px;
+  text-indent: 25px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: none;
+  line-height: 0;
+  padding-left: 1em;
+  position: relative;
+}
+.modeset .header h2:before {
+  background-color: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxRTU2N0VEQkNBMTMxMUUxQjZERUI3NjgyOThDRTk2MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxRTU2N0VEQ0NBMTMxMUUxQjZERUI3NjgyOThDRTk2MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjFFNTY3RUQ5Q0ExMzExRTFCNkRFQjc2ODI5OENFOTYwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjFFNTY3RURBQ0ExMzExRTFCNkRFQjc2ODI5OENFOTYwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+B9eu8gAAAetJREFUeNrsls8rRFEUx2fG+DETsVBk2E0pFjZ2lFCKlbIg2aiRH6UJK8wKUyMZMiYRZefHwh+g7GQrLGVpKRsZjJnne+q8et3efXPfM8NmTn3q3vPuO9/37jv3vOPWNM2lm/vqWR96QZbJhy1ovYFNo8MjWdgJ+k389aDVpug2WBGdMuFysAdqBH8VSIAyRVGKEQZfqsK0sAnEBH8KdIOIgugcmOKxpiqs2yQYFHxpFu7IcW+d1UWPwpMnhCCUcG6QBH6n2aYi3AjiJlvWBlZN1vtk22tXmGwUDIN3wT8P+gzzEnAAmsGnE+EeEx+dwxaTDKUtr+ZYZ2AM1IIuK2GvMG8AA5KsDfCZFLcwCLb4qA2Bb3DMfmXhZTBisb5d4h8XYgbtJpefi0fBzeP6JysKF4WdWga8GuYXfyW8DvZ5THU+ZEf4jf+/MrP6CRxyBdugtkdlqy/BNY9vwa4kMAU9tRCu5PK6pPqNT8As+OAqRiX0XtJHJXPkzgs/oHJyPYJFUMHdxrQQQGPhgmQ1vc05F/wbEBWEMzniZp0Kpzkx9ABr/ACq7ezDb85xyiBMWz3DXYXVPVHuLvNaQO6sspSvRVSDeW3mRJzbIp/gp6Z9p9AlM8xHpZTnIbuiTt6Y7MmQuRPgyMlx+hFgAKpnX6umSaMgAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.modeset .header select {
+  margin-top: -12px;
+  margin-right: 10px;
+  float: right;
+}
+
+/* Theme for markdown document */
+.modeset .wikistyle {
+  border: thin solid #cfd0cf;
+  padding: 2em 4em 2em 3em;
+  background-color: #fff;
+  margin-bottom: 2em;
+}
+
+.modeset .wikistyle > :first-child {
+  margin-top: 0 !important;
+}
+
+.modeset img {
+  border: 0;
+  max-width: 100%;
+}
+
+.modeset img[title="masthead"] {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.modeset img[title*="large"] {
+  width: 256px;
+  height: 256px;
+}
+
+.modeset img[title*="medium"] {
+  width: 128px;
+  height: 128px;
+}
+
+.modeset img[title*="small"] {
+  width: 64px;
+  height: 64px;
+}
+
+.modeset img[title*="xsmall"] {
+  width: 32px;
+  height: 32px;
+}
+
+.modeset img[title*="align-right"] {
+  display: block;
+  float: right;
+}
+
+.modeset h1,
+.modeset h2,
+.modeset h3,
+.modeset h4,
+.modeset h5,
+.modeset h6 {
+  color: #0091ce;
+  font-family: "HelveticaNeueLTStd-Th", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+  position: relative;
+  margin: 1.5em 0 0;
+  padding: 0;
+}
+
+.modeset > h1:first-child,
+.modeset > h1:first-child + h2,
+.modeset > h2:first-child,
+.modeset > h3:first-child,
+.modeset > h4:first-child,
+.modeset > h5:first-child,
+.modeset > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.modeset h1 {
+  font-size: 30px;
+  color: #434343;
+}
+
+.modeset h2 {
+  font-size: 24px;
+}
+
+.modeset h3 {
+  font-size: 18px;
+}
+
+.modeset h4 {
+  font-size: 16px;
+}
+
+.modeset h5 {
+  font-size: 14px;
+}
+
+.modeset h6 {
+  font-family: "HelveticaNeueLTStd-Bd", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  color: #434343;
+}
+
+.modeset h1 + h2 {
+  color: #434343;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.modeset h1 + h2 + h3 {
+  color: #0091ce;
+  font-family: "MrsEavesBold", serif;
+  font-size: 14px;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+.modeset p,
+.modeset blockquote,
+.modeset ul,
+.modeset ol,
+.modeset dl,
+.modeset table,
+.modeset pre {
+  color: #434343;
+  margin: 1em 0;
+}
+
+.modeset  h2 + p,
+.modeset  h3 + p,
+.modeset  h4 + p,
+.modeset  h5 + p,
+.modeset  h6 + p {
+  margin-top: 0;
+}
+
+.modeset p:before,
+.modeset p:after {
+  content: "";
+  display: table;
+}
+.modeset p:after {
+  clear: both;
+}
+
+.modeset hr {
+  display: block;
+  border: 0;
+  border-top: thin dotted #0091ce;
+  height: 1px;
+  margin: 1em 0;
+}
+
+.modeset a {
+  color: #0091ce;
+  text-decoration: none;
+}
+
+.modeset a:hover {
+  text-decoration: underline !important;
+}
+
+.modeset small,
+.modeset big,
+.modeset abbr,
+.modeset acronym,
+.modeset dfn,
+.modeset cite,
+.modeset address {
+  font-style: normal;
+}
+
+.modeset ul,
+.modeset ol {
+  list-style-position: inside;
+}
+
+.modeset ul li,
+.modeset ol li {
+  margin-left: 1.1em;
+}
+
+.modeset ul li > :first-child,
+.modeset ol li > :first-child {
+  margin-top: 0;
+}
+
+.modeset dl {
+  padding: 0;
+}
+
+.modeset dl:before,
+.modeset dl:after {
+  content: "";
+  display: table;
+}
+.modeset dl:after {
+  clear: both;
+}
+
+.modeset dt {
+  font-weight: bold;
+  float: left;
+  width: 10%;
+}
+
+.modeset dd {
+  float: left;
+  width: 90%;
+}
+
+.modeset dl + h5 {
+  margin-top: 3em !important;
+}
+
+.modeset pre,
+.modeset code,
+.modeset pre > code,
+.modeset tt {
+  font-size: 12px;
+  font-family: Consolas,Menlo,"Liberation Mono",Courier,monospace;
+}
+
+.modeset code,
+.modeset tt {
+  background-color: #f8f8f8;
+  border-radius: 0.25em;
+  border: thin solid #cfd0cf;
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.modeset pre {
+  background-color: #f8f8f8;
+  border-radius: 0.25em;
+  border: thin solid #cfd0cf;
+  line-height: 1.2;
+  overflow: auto;
+  padding: 6px 10px;
+}
+
+.modeset pre > code {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+}
+
+.modeset pre code,
+.modeset pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+.modeset blockquote {
+  padding: 0 10%;
+}
+
+.modeset blockquote p {
+  font-family: "MrsEavesBold", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.modeset blockquote,
+.modeset q {
+  quotes: none;
+}
+
+.modeset blockquote::before,
+.modeset blockquote::after,
+.modeset q::before,
+.modeset q::after {
+  content: none;
+}
+
+.modeset blockquote cite {
+  border-bottom: thin dotted;
+  cursor: help;
+}
+
+.modeset table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 100%;
+  font: inherit;
+  width: 100%;
+}
+.modeset table tr th,
+.modeset table tr td {
+  border: thin solid #cfd0cf;
+  text-align: left;
+  margin: 0;
+}
+
+.modeset table tr th {
+  color: #0091ce;
+  font-family: "HelveticaNeueLTStd-Th", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.modeset table tr td {
+  padding: 0.25em 0.5em;
+}
+
+.modeset table tr {
+  border-top: thin solid #cfd0cf;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.modeset table tr:nth-child(2n) {
+  background-color: #fafafa;
+}
+
+
+.modeset .highlight {
+  color: #0091ce;
+}
+
+.modeset .mrs {
+  color: #6a6a6a;
+  font-family: "MrsEavesBold", serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.modeset .copyright {
+  color: #6a6a6a;
+  font-family: "MrsEavesBold", serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 4em;
+}
+.modeset .copyright:before {
+  content: "\00a9 2012 THEORY FOUR, LLC // DBA MODE SET"
+}
+
+.modeset .signature {
+  border-bottom: thin solid #0091ce;
+  color: #0091ce;
+  font-family: "HelveticaNeueLTStd-Th", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  height: 40px;
+  width: 70%;
+}
+.modeset .signature:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.modeset .mark:before {
+  content: "x";
+}
+
+.modeset .sign:before {
+  content: "Sign:";
+}
+
+.modeset .initial:before {
+  content: "Initial:";
+}
+
+.modeset .initial.signature {
+  width: 40%;
+}
+
