@@ -152,6 +152,10 @@
   display: block;
   float: right;
 }
+.modeset img[title*="block"] {
+  display: block;
+}
+
 
 .modeset h1,
 .modeset h2,
