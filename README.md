@@ -9,3 +9,11 @@
 
 All image assets and marks are Copyright (&copy;) Theory Four, LLC // dba Mode Set.
 
+<!-- 
+# TODO
+- Add 011
+- redo logos so they are based off vector objects (psd)
+- Add logos with trademark
+- Redo header
+-->
+
