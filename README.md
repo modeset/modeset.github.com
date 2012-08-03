@@ -9,9 +9,3 @@
 
 All image assets and marks are Copyright (&copy;) Theory Four, LLC // dba Mode Set.
 
-<!--
-## TODO:
-
-Fix the masthead so it's as large as it needs to be and not scaling
--->
-
